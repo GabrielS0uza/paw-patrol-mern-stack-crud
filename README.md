@@ -1,4 +1,4 @@
-# Paw Patrol - Basic MERN Stack Application
+# Paw Patrol - MERN Stack Application
 
 ### Front-End - React + Material-UI
 
