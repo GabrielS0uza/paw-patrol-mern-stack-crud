@@ -73,7 +73,7 @@ class ModalDeleteDog extends Component {
                     <DialogTitle>Delete {this.props.dog.name}</DialogTitle>
                     <DialogContent>
                         <DialogContentText id="alert-dialog-description">
-                            Do you really want to deleted this dog? This process cannot be undone.
+                            Do you really want to delete this dog? This process cannot be undone.
                          </DialogContentText>
                         <div className={classes.modalActionsForm}>
                             <Button
