@@ -1,0 +1,264 @@
+body {
+  background: rgb(230,230,230) !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==================== 404 Page ==================== */
+
+.error-404 {
+  margin: 15px 0;
+  height: calc(100vh - 150px);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(244, 67, 54);
+  font-size: 25px;
+  border-radius: 6px;
+}
+
+/* ==================== Custom Scrollbar ==================== */
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px #888;
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: sienna; 
+}
+
+/* ==================== Main ==================== */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.content {
+  width: 100%;
+}
+
+.divider {
+  width: 100% !important;
+  margin: 15px 0 !important;
+}
+
+/* ==================== Buttons ==================== */
+
+.btn:disabled {
+  cursor: not-allowed !important;
+  pointer-events: all !important;
+  opacity: 1;
+}
+
+.btn-outlined {
+  color: sienna !important;
+  border-color: sienna !important;
+}
+
+.btn-cancel {
+  margin-right: 7px !important;
+  color: inherit !important;
+}
+
+.btn-view-circle {
+  background: #fff !important;
+  border: 1px solid rgb(76, 175, 80) !important;
+  color: rgb(76, 175, 80) !important;
+}
+
+.btn-edit-circle {
+  background: #fff !important;
+  border: 1px solid rgb(49, 112, 143) !important;
+  color: rgb(49, 112, 143) !important;
+}
+
+.btn-delete-circle {
+  background: #fff !important;
+  border: 1px solid rgb(244, 67, 54) !important;
+  color: rgb(244, 67, 54) !important;
+}
+
+.btn-view-circle:hover, .btn-edit-circle:hover, .btn-delete-circle:hover {
+  background: rgba(0, 0, 0, 0.08) !important;
+}
+
+/* ==================== Dogs Table ==================== */
+
+/* Wrapper */
+
+.dogs-table-wrap, .dog {
+  height: calc(100vh - 150px);
+  padding: 30px;
+  margin: 15px 0;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.dogs-table-title, .dog-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 30px;
+  margin: -30px -30px 25px;
+  background: #633200;
+  border-radius: 5px 5px 0 0;
+}
+
+.dogs-table-title h1, .dog-title h1 {
+  color: #fff;
+}
+
+/* Table */
+
+.dogs-table {
+  height: calc(100% - 60px);
+  border-collapse: collapse;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+}
+
+.dogs-table thead {
+  box-shadow: 0 5px 20px 0 rgba(0,0,0,.1);
+}
+
+.dogs-table thead, .dogs-table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.dogs-table tbody {
+  display: block;
+  height: calc(100% - 60px);
+  overflow-y: auto;
+}
+
+.dogs-table thead th, .dogs-table tbody td {
+  padding: 15px 25px;
+  text-align: left;
+}
+
+.dogs-table thead tr {
+  height: 60px;
+  font-size: 16px;
+}
+
+.dogs-table thead th:last-child, .dogs-table tbody td:last-child {
+  width: 22%;
+}
+
+.dogs-table tbody tr {
+  border-bottom: 1px solid #E3F1D5;
+}
+
+.dogs-table tbody tr:last-child {
+  border: 0 !important;
+}
+
+/* ==================== Responsive ==================== */
+
+@media
+	  only screen 
+    and (min-width: 768px) 
+    and (max-width: 992px)  {
+
+      .dogs-table thead th:nth-child(3), .dogs-table tbody td:nth-child(3) {
+        width: 20%;
+      }
+
+      .dogs-table thead th:last-child, .dogs-table tbody td:last-child {
+        width: 30%;
+      }
+    }
+
+@media
+	  only screen 
+    and (max-width: 760px), (min-device-width: 768px) 
+    and (max-device-width: 1024px)  {
+
+    .dogs-table-wrap, .dog {
+      padding: 15px;
+    }
+
+    .dogs-table-title button span {
+      font-size: 0;
+    }
+
+    .dogs-table-title button span span {
+      margin: 0;
+    }
+
+    .dogs-table-title h1, .dogs-title h1 {
+      font-size: 22px;
+    }
+
+    .dogs-table thead th:last-child, .dogs-table tbody td:last-child {
+      display: flex;
+      width: auto;
+    }
+
+    .dogs-table tbody {
+      height: 100%;
+    }
+
+		.dogs-table, .dogs-table thead, .dogs-table tbody, .dogs-table th, .dogs-table td, .dogs-table tr {
+			display: block;
+		}
+
+		.dogs-table thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px;
+		}
+
+    .dogs-table tr {
+      border-bottom: 1px solid #633200 !important;
+    }
+      
+		.dogs-table tbody td {
+			padding: 15px 10px;
+			border: none;
+			border-bottom: 1px solid #eee;
+			position: relative;
+			padding-left: 50%;
+		}
+
+		.dogs-table td:before {
+			position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+			left: 25px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+		}
+
+		.dogs-table td:nth-of-type(1):before { content: "Name"; }
+		.dogs-table td:nth-of-type(2):before { content: "Breed"; }
+		.dogs-table td:nth-of-type(3):before { content: "Age"; }
+		.dogs-table td:nth-of-type(4):before { content: "List of Vaccines"; }
+		.dogs-table td:nth-of-type(5):before { content: "Actions"; }
+	}
