@@ -1,6 +1,6 @@
 # Paw Patrol - Basic MERN Stack Application
 
-### Front-End - React
+### Front-End - React + Material-UI
 
 ### Back-End - Node.js, Express.js & MongoDB
 
