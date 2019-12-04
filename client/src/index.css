@@ -133,6 +133,7 @@ a, a:hover, a:focus, a:active {
 /* Table */
 
 .dogs-table {
+  display: block;
   height: calc(100% - 60px);
   border-collapse: collapse;
   border-radius: 6px;
