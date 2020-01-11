@@ -1,6 +1,9 @@
 {
   "name": "node-react-starter",
   "version": "1.0.0",
+  "engines": {
+    "node": "13.5.0"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
