@@ -14,3 +14,5 @@
 6. Start MongoDB service with the command `"path to your mongod.exe" --dbpath="path to your mongodb-data"`. 
 7. Run `npm run dev` from the root directory to start the server. By default it will run on `port 3000`.
 8. Go to `http://localhost:3000` to see the application running.
+
+Go to https://paw-patrol.herokuapp.com/ to see the application online.
